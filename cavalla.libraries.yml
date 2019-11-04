@@ -1,0 +1,30 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external }
+      build/css/animate.css : {}
+      build/css/bootstrap.css : {}
+      build/css/style.css : {}
+      build/fonts/fonts.css : {}
+  js:
+    build/js/jQuery.js: {}
+    http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js: { type: external }
+    build/js/bootstrap.js: {}
+    build/js/script.js: {}
+photoGallery:
+   version: VERSION
+   css:
+    theme:
+     build/css/fancybox.css: {}
+   js:
+     build/js/fancybox.js: {}
+     build/js/fancy_photo.js: {}
+star-rating:
+  version: VERSION
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external }
+  js:
+    js/star_rating_script.js: {}
+

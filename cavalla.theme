@@ -1,0 +1,141 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Cavalla theme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\node\Entity\Node;
+use Drupal\media\Entity\Media;
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\block\Entity\Block;
+use Drupal\Core\Breadcrumb\Breadcrumb;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Link;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function cavalla_preprocess_page_title(&$variables) {
+  // Since the title and the shortcut link are both block level elements,
+  // positioning them next to each other is much simpler with a wrapper div.
+  if (!empty($variables['title_suffix']['add_or_remove_shortcut']) && $variables['title']) {
+    // Add a wrapper div using the title_prefix and title_suffix render
+    // elements.
+    $variables['title_prefix']['shortcut_wrapper'] = [
+      '#markup' => '<div class="shortcut-wrapper clearfix">',
+      '#weight' => 100,
+    ];
+    $variables['title_suffix']['shortcut_wrapper'] = [
+      '#markup' => '</div>',
+      '#weight' => -99,
+    ];
+    // Make sure the shortcut link is the first item in title_suffix.
+    $variables['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
+
+   
+  }
+}
+
+function getBaseUrl() {
+    // output: /myproject/index.php
+    $currentPath = $_SERVER['PHP_SELF'];
+    
+    // output: Array ( [dirname] => /myproject [basename] => index.php [extension] => php [filename] => index )
+    $pathInfo = pathinfo($currentPath);
+    
+    // output: localhost
+    $hostName = $_SERVER['HTTP_HOST'];
+    
+    if ($hostName=='localhost'){
+      $protocol = 'http://';
+
+    }
+    else{
+      $protocol = 'https://';
+    }
+    
+    // return: http://localhost/myproject/
+    return $protocol.$hostName.$pathInfo['dirname']."/";
+      //  return $pathInfo['dirname']."/";
+
+}
+
+function cavalla_preprocess_page(&$variables){
+  
+  cavalla_extend_theme_variables($variables);
+  $variables['url'] = str_replace('','/',$_SERVER['REQUEST_URI']);
+}
+
+
+// Make all theme settings available to insert in pages
+function cavalla_extend_theme_variables(&$variables){
+   $theme_name = \Drupal::theme()->getActiveTheme()->getName();
+   $theme_settings = \Drupal::config($theme_name . '.settings');
+   CacheableMetadata::createFromRenderArray($variables)
+     ->addCacheableDependency($theme_settings)
+     ->applyTo($variables);
+   $variables += $theme_settings->getOriginal();
+}
+
+
+
+
+function cavalla_preprocess_node(&$variables) {
+  /* create a block object */
+  $breadcrump_block_object = \Drupal\block\Entity\Block::load('cavalla_breadcrumbs');
+  /* creates a renderable array from the block object */
+  $variables['breadcrumb'] = \Drupal::entityManager()->getViewBuilder('block')->view($breadcrump_block_object); 
+}
+
+
+function cavalla_preprocess_html(&$variables) {
+
+  $baseURL = [
+    '#tag' => 'base',
+    '#attributes' => [
+      'href' => '/',
+    ],
+  ];
+  $variables['page']['#attached']['html_head'][] = [$baseURL, '/'];
+};
+
+
+
+function cavalla_preprocess_breadcrumb(&$variables){
+  if(($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']){
+    $variables['breadcrumb'][] = array('text' => $node->getTitle());
+    $variables['#cache']['contexts'][] = "url.path";
+     $variables['#cache']['tags'][] = "node:{$node->nid->value}";
+  }
+}
+
+
+
+  
+
+function cavalla_preprocess_paragraph(&$variables) {
+    $variables['base_url_node']= getBaseUrl();
+  
+    $variables['hero_video_url'] = '../sites/default/files/2019-06/sipandpainting.mp4';
+
+    $variables['is_front'] = Drupal::service('path.matcher')->isFrontPage();
+
+    // Ensure the cache varies correctly.
+    // Drupal 8.2.x or lower
+    $variables['#cache']['contexts'][] = 'url.path';
+  
+    // Ensure the cache varies correctly.
+    // Drupal 8.3.x+
+    $variables['#cache']['contexts'][] = 'url.path.is_front'; 
+  }
+

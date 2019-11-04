@@ -1,0 +1,48 @@
+<section id="basic_page_cavalla">
+  {%  if "false" in  content.field_cavalla_bp_hero_image_hide[0]%}
+  <!--Hero Image-->
+
+    	<section class="bp_hero_image">
+        {%  if true in content.field_cavalla_bp_hero_image[0] %}
+        <picture class="">
+          <img  class="background_image" src="{% spaceless %}{{content.field_cavalla_bp_hero_image[0]}}{% endspaceless %}" />
+        </picture>
+        {% endif %}
+    			<section class="marketing_background_text center_text">
+    				<section class="container">
+    				<h1 class="title-header">{{node.title.value}}</h1>
+    				</section>
+    			</section>
+    	</section>
+      <!--Hero Image-->
+
+      <!--Breadcrumb-->
+        <section class="breadcrumb_section p-3">
+              <div class="container">
+                <nav aria-label="breadcrumb" class="breadcrumb">
+                    {{ breadcrumb }}
+                </nav>
+              </div>
+           </section>
+           <!--Breadcrumb-->
+
+    {% endif %}
+
+
+  
+
+        {%  if false in content.field_cavalla_bp_intro_hide[0] %}
+        <!--Intro Text-->
+        <section class="intro_text_section p-md-3 p-lg-4">
+          <section class="container">{{content.field_cavalla_bp_introduction}}</section>
+       </section>
+         <!--Intro Text-->
+       {% endif %}
+       {% for i in 0..content.field_cavalla_bp_widgets|length %}	
+          {% if content.field_cavalla_bp_widgets[i] is not null %} 
+            {{-content.field_cavalla_bp_widgets[i]-}}
+          {% endif %}
+      {% endfor %}
+</section>
+
+
