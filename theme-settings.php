@@ -9,7 +9,7 @@ use Drupal\Core\Theme\ThemeSettings;
 use Drupal\system\Form\ThemeSettingsForm;
 use Drupal\Core\Form;
 
-function cavalla_form_system_theme_settings_alter(&$form, Drupal\Core\Form\FormStateInterface $form_state) {
+function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form\FormStateInterface $form_state) {
 
   $form['cavalla_nav_menu_settings'] = array(
     '#type' => 'details',
