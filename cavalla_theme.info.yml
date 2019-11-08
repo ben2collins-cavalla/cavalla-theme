@@ -21,7 +21,8 @@ libraries:
   - cavalla_theme/global-styling
   - cavalla_theme/scripts
 regions:
-  header: Header
+  header: 'Header'
+  cart: 'cart'
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   admin_actions : 'Admin Actions'

@@ -137,9 +137,9 @@ function _nav_menu_display(){
   $form['cavalla_nav_menu_settings']['nav_meun_display']['display'] = array(
     '#type' => 'select',
     '#options' => [
-      '' => t('Hamburger'),
-      'navbar-expand-lg' => t('Tradition'),
-      'collapse navbar-collapse justify-content-md-center' => t('Centered Nav'),
+      '/templates/_includes/global/menu_display/hamburger_menu.html.twig'=> t('Hamburger'),
+      '/templates/_includes/global/menu_display/traditional_menu.html.twig' => t('Tradition'),
+      '/templates/_includes/global/menu_display/center_menu.html.twig' => t('Centered Nav'),
     ],
     '#title' => t('Navigtion Menu Display'),
     '#default_value' => theme_get_setting(''),
