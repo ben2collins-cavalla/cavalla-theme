@@ -16,7 +16,7 @@ function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form
     '#title' => t('Navigation Menu Display Settings'),
   );
 
-  $form['cavalla_menu_settings']['meun_display'] = array(
+  $form['cavalla_menu_settings']['menu_display'] = array(
     '#type' => 'fieldset',
     '#title' => t('Navigation Menu Displays'),
     '#weight' => 100,
@@ -24,9 +24,10 @@ function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form
     '#collapsed' => true,
   );
 
-  $form['cavalla_menu_settings']['meun_display']['menu_display_variations'] = array(
+  $form['cavalla_menu_settings']['menu_display']['menu_display_variations'] = array(
     '#type' => 'select',
     '#options' => [
+      'navigation menu display'=>('select'),    
       'hamburger' => t('Hamburger'),
       'traditional' => t('Traditional'),
       'centered' => t('Centered Nav'),
@@ -120,30 +121,3 @@ function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form
 
 }
 
-function _nav_menu_display(){
-  $form['cavalla_nav_menu_settings'] = array(
-    '#type' => 'details',
-    '#title' => t('Cavalla Navigation Menu Display Settings'),
-  );
-
-  $form['cavalla_nav_menu_settings']['nav_meun_display'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Navigation Menu Displays'),
-    '#weight' => 100,
-    '#collapsible' => true,
-    '#collapsed' => true,
-  );
-
-  $form['cavalla_nav_menu_settings']['nav_meun_display']['display'] = array(
-    '#type' => 'select',
-    '#options' => [
-      'hamburger'=> t('Hamburger'),
-      'tradition' => t('Tradition'),
-      'centered' => t('Centered Nav'),
-    ],
-    '#title' => t('Navigtion Menu Display'),
-    '#default_value' => theme_get_setting(''),
-    '#description' => t("Choose how to display the site's navigtion menu"),
-  );
-   return $form;
-}
