@@ -27,7 +27,7 @@ function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form
   $form['cavalla_menu_settings']['menu_display']['menu_display_variations'] = array(
     '#type' => 'select',
     '#options' => [
-      'navigation menu display'=>('select'),    
+      'navigation menu display'=>t('select'),    
       'hamburger' => t('Hamburger'),
       'traditional' => t('Traditional'),
       'centered' => t('Centered Nav'),
