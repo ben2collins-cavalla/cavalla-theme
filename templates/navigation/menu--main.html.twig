@@ -1,14 +1,9 @@
+{% import _self as menus %}
+
 {{ menus.menu_links(items, attributes, 0) }}
-{{menu_display_variations}}
-{% if 'hamburger' in menu_display_variations %}
   {% macro menu_links(items, attributes, menu_level) %}
     {% import _self as menus %}
     {% if items %}
-      {% if menu_level == 0 %}
-        <ul class="nav justify-content-end">
-      {% else %}
-        <ul class="nav justify-content-end">
-      {% endif %}
       {% for item in items %}
         <li{{ item.attributes }}>
           {{ link(item.title, item.url) }}
@@ -20,7 +15,6 @@
       </ul>
     {% endif %}
   {% endmacro %}
-  {% endif %}
 
 
 
