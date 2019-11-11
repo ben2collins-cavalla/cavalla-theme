@@ -1,5 +1,5 @@
 {{ menus.menu_links(items, attributes, 0) }}
-
+{{menu_display_variations}}
 {% if 'hamburger' in menu_display_variations %}
   {% macro menu_links(items, attributes, menu_level) %}
     {% import _self as menus %}
