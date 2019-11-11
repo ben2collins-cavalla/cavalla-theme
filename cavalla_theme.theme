@@ -139,3 +139,8 @@ function cavalla_theme_preprocess_paragraph(&$variables) {
     $variables['#cache']['contexts'][] = 'url.path.is_front'; 
   }
 
+
+  function cavalla_theme_update_8001() {
+    \Drupal::service('config.installer')->installDefaultConfig('theme', 'cavalla_theme');
+  }
+  
