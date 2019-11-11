@@ -11,12 +11,12 @@ use Drupal\Core\Form;
 
 function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form\FormStateInterface $form_state) {
 
-  $form['cavalla_nav_menu_settings'] = array(
+  $form['cavalla_menu_settings'] = array(
     '#type' => 'details',
     '#title' => t('Navigation Menu Display Settings'),
   );
 
-  $form['cavalla_nav_menu_settings']['nav_meun_display'] = array(
+  $form['cavalla_menu_settings']['meun_display'] = array(
     '#type' => 'fieldset',
     '#title' => t('Navigation Menu Displays'),
     '#weight' => 100,
@@ -24,12 +24,12 @@ function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form
     '#collapsed' => true,
   );
 
-  $form['cavalla_nav_menu_settings']['nav_meun_display']['menu_display'] = array(
+  $form['cavalla_menu_settings']['meun_display']['menu_display_variations'] = array(
     '#type' => 'select',
     '#options' => [
-      'navbar' => t('Hamburger'),
-      'navbar navbar-expand-lg' => t('Traditional'),
-      'navbar collapse navbar-collapse justify-content-md-center' => t('Centered Nav'),
+      'hamburger' => t('Hamburger'),
+      'traditional' => t('Traditional'),
+      'centered' => t('Centered Nav'),
     ],
     '#title' => t('Navigtion Menu Display'),
     '#default_value' => theme_get_setting('navbar'),
