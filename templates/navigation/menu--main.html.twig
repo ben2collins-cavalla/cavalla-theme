@@ -5,7 +5,7 @@
     {% import _self as menus %}
     {% if items %}
       {% for item in items %}
-        <li{{ item.attributes }} class="mx-5">
+        <li{{ item.attributes }} class="mx-2">
           {{ link(item.title, item.url) }}
           {% if item.below %}
             {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
