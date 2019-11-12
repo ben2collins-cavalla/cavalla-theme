@@ -20,14 +20,16 @@
 {% if 'tradition' in menu_display_variations %}
   <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
       <nav class="navbar-dark bg-dark">
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#cavalla_navbar" aria-controls="cavalla_navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <a class="navbar-brand" href="#">{{ logo }}</a>
+        <a class="navbar-brand" href="#">{{ logo }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">        </button>
+
+            <ul class="nav justify-content-end">
+                  {{ page.primary_menu }}
+            </ul>
+   
+           
         {{ page.cart }}
-          <ul class="nav justify-content-end">
-            {{ page.primary_menu }}
-          </ul>
+         
       </nav>
   </header>
 {% endif %}
