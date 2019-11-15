@@ -11,7 +11,7 @@ use Drupal\Core\Form;
 
 function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form\FormStateInterface $form_state) {
 
-  $form['cavalla_menu_settings'] = array(
+/*   $form['cavalla_menu_settings'] = array(
     '#type' => 'details',
     '#title' => t('Navigation Menu Display Settings'),
   );
@@ -35,7 +35,7 @@ function cavalla_theme_form_system_theme_settings_alter(&$form, Drupal\Core\Form
     '#title' => t('Navigtion Menu Display'),
     '#default_value' => theme_get_setting('navbar'),
     '#description' => t("Choose how to display the site's navigtion menu"),
-  );
+  ); */
 
   // Footer
   $form['cavalla_footer_settings'] = array(

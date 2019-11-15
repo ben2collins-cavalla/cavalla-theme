@@ -1,0 +1,56 @@
+{% if 'hamburger' in menu_display_variations %}
+  <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
+      <nav class="navbar-dark bg-dark">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#cavalla_navbar" aria-controls="cavalla_navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <a class="navbar-brand" href="#">{{ logo }}</a>
+
+        {{ page.cart }}
+        <div class="navbar-collapse collapse" id="cavalla_navbar">
+          <ul class="">
+            {{ page.primary_menu }}
+          </ul>
+        </div>
+      </nav>
+  </header>
+{% endif %}
+
+
+{% if 'tradition' in menu_display_variations %}
+  <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
+      <nav class="navbar-dark bg-dark navbar navbar-expand-lg">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#cavalla_navbar" aria-controls="cavalla_navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">{{ logo }}</a>
+          <div class="collapse navbar-collapse" id="cavalla_navbar">
+            <ul class="nav justify-content-end ">
+                  {{ page.primary_menu }}
+            </ul>
+          </div>
+           
+        {{ page.cart }}
+         
+      </nav>
+  </header>
+{% endif %}
+
+
+{% if 'centered' in menu_display_variations %}
+  <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
+      <nav class="navbar-dark bg-dark">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#cavalla_navbar" aria-controls="cavalla_navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <a class="navbar-brand" href="#">{{ logo }}</a>
+
+        {{ page.cart }}
+        <div class="navbar-collapse collapse" id="cavalla_navbar">
+          <ul class="nav justify-content-center">
+            {{ page.primary_menu }}
+          </ul>
+        </div>
+      </nav>
+  </header>
+{% endif %}
