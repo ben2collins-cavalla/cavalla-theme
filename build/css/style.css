@@ -1114,6 +1114,8 @@ overflow: hidden;
 
 .testimonial_bundle{
   border:none;
+  padding: 2rem 0rem;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1174,6 +1176,7 @@ overflow: hidden;
 
 .testimonial_bundle .avatar {
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 
