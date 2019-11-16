@@ -45,7 +45,7 @@ var controller = new ScrollMagic.Controller();
 	})
 	card_bundle_scroll.on('start end', function(){
 		$('[data-animate-card="On"]').eq(i).find('h1').addClass('animated fadeIn');
-		$('[data-animate-card="On"]').eq(i).find('.text-center .lead').addClass('animated fadeInDown');
+		$('[data-animate-card="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
 		$('[data-animate-card="On"]').eq(i).find('.card').addClass('animated bounceIn delay-1s');
 
 	}) // add class toggle
