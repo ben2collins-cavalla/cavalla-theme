@@ -1236,12 +1236,6 @@ height: 100%;
 
 
 
-@media only screen and  (min-width: 768px){
-  #basic_page_cavalla .marketing_background_text .container{
-    padding: 0 50px; 
-    max-width: 768px;
-  }
-}
 
 
 #basic_page_cavalla  .bp_hero_image  .marketing_background_text{
