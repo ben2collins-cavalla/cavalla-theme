@@ -20,5 +20,8 @@
         "branch-alias": {
         "8.x-1.x": "1.x-dev"
         }
+    },
+    "require": {
+        "cavalla/cavalla_theme": "dev-master"
     }
 }

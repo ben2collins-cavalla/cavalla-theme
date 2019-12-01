@@ -1,5 +1,5 @@
 <section id="basic_page_cavalla">
-  {%  if "false" in  content.field_cavalla_bp_hero_image_hide[0]%}
+  {%  if "On" in  content.field_cavalla_bp_hero_image_hide[0]%}
   <!--Hero Image-->
 
     	<section class="bp_hero_image">
@@ -31,13 +31,6 @@
 
   
 
-        {%  if false in content.field_cavalla_bp_intro_hide[0] %}
-        <!--Intro Text-->
-        <section class="intro_text_section p-md-3 p-lg-4">
-          <section class="container">{{content.field_cavalla_bp_introduction}}</section>
-       </section>
-         <!--Intro Text-->
-       {% endif %}
        {% for i in 0..content.field_cavalla_bp_widgets|length %}	
           {% if content.field_cavalla_bp_widgets[i] is not null %} 
             {{-content.field_cavalla_bp_widgets[i]-}}
