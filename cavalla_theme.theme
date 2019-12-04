@@ -73,7 +73,7 @@ function getBaseUrl() {
 function cavalla_theme_preprocess_page(&$variables){
   
   cavalla_theme_extend_theme_variables($variables);
-  $variables['url'] = str_replace('','/',$_SERVER['REQUEST_URI']);
+  $variables['base_url'] = getBaseUrl();
 }
 
 
