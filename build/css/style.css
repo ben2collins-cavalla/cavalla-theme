@@ -783,6 +783,12 @@ margin-bottom: 10px;
   left: 0;
 }
 
+@media only screen and (min-width:1366px){
+  .call_to_action_bundle_half_view {
+    max-height: 600px !important;
+  }
+}
+
 [data-animate-cta="On"] .title-header,
 [data-animate-cta="On"] .lead,
 [data-animate-cta="On"] .btn{
