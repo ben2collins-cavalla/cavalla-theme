@@ -1,58 +1,59 @@
 
 
 /**** Home Page Animation ****/
+jQuery.noConflict();
+(function($){
+	"use strict";
+	var controller = new ScrollMagic.Controller();
 
-"use strict";
-var controller = new ScrollMagic.Controller();
+		$('.call_to_action_bundle').each(function(i){
+			var cta_bundle_scroll=new ScrollMagic.Scene({
+				triggerElement:this,
+				offset: 100, // offset trigger position by 100px;
+				triggerHook: "onCenter",
+			})
+			cta_bundle_scroll.on('start end', function(){
+				$('[data-animate-cta="On"]').eq(i).find('.title-header').addClass('animated fadeIn');
+				$('[data-animate-cta="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
+				$('[data-animate-cta="On"]').eq(i).find('.btn').addClass('animated fadeInDown');
 
-	$('.call_to_action_bundle').each(function(i){	
-		var cta_bundle_scroll=new ScrollMagic.Scene({
+			}) // add class toggle
+			controller.addScene(cta_bundle_scroll);
+		});
+
+	/****Testionial Bundle Scroll Animation */
+	$('.testimonials_bundle').each(function(i){
+		var testimonial_bundle_scroll=new ScrollMagic.Scene({
 			triggerElement:this,
 			offset: 100, // offset trigger position by 100px;
 			triggerHook: "onCenter",
 		})
-		cta_bundle_scroll.on('start end', function(){
-			$('[data-animate-cta="On"]').eq(i).find('.title-header').addClass('animated fadeIn');
-			$('[data-animate-cta="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
-			$('[data-animate-cta="On"]').eq(i).find('.btn').addClass('animated fadeInDown');
+		testimonial_bundle_scroll.on('start end', function(){
+			$('[data-animate-testimonial="On"]').eq(i).find('h1').addClass('animated fadeIn');
+			$('[data-animate-testimonial="On"]').eq(i).find('.text-center .lead').addClass('animated fadeInDown');
+			$('[data-animate-testimonial="On"]').eq(i).find('.testimonial_bundle').addClass('animated bounceIn delay-1s');
 
 		}) // add class toggle
-		controller.addScene(cta_bundle_scroll);
-	 });
+		controller.addScene(testimonial_bundle_scroll);
+	});
 
-/****Testionial Bundle Scroll Animation */
- $('.testimonials_bundle').each(function(i){	
-	var testimonial_bundle_scroll=new ScrollMagic.Scene({
-		triggerElement:this,
-		offset: 100, // offset trigger position by 100px;
-		triggerHook: "onCenter",
-	})
-	testimonial_bundle_scroll.on('start end', function(){
-		$('[data-animate-testimonial="On"]').eq(i).find('h1').addClass('animated fadeIn');
-		$('[data-animate-testimonial="On"]').eq(i).find('.text-center .lead').addClass('animated fadeInDown');
-		$('[data-animate-testimonial="On"]').eq(i).find('.testimonial_bundle').addClass('animated bounceIn delay-1s');
+	/****Card Bundle Scroll Animation */
+	$('.card_bundle').each(function(i){
+		var card_bundle_scroll=new ScrollMagic.Scene({
+			triggerElement:this,
+			offset: 100, // offset trigger position by 100px;
+			triggerHook: "onCenter",
+		})
+		card_bundle_scroll.on('start end', function(){
+			$('[data-animate-card="On"]').eq(i).find('h1').addClass('animated fadeIn');
+			$('[data-animate-card="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
+			$('[data-animate-card="On"]').eq(i).find('.card').addClass('animated bounceIn delay-1s');
 
-	}) // add class toggle
-	controller.addScene(testimonial_bundle_scroll);
- });
- 
-/****Card Bundle Scroll Animation */
- $('.card_bundle').each(function(i){	
-	var card_bundle_scroll=new ScrollMagic.Scene({
-		triggerElement:this,
-		offset: 100, // offset trigger position by 100px;
-		triggerHook: "onCenter",
-	})
-	card_bundle_scroll.on('start end', function(){
-		$('[data-animate-card="On"]').eq(i).find('h1').addClass('animated fadeIn');
-		$('[data-animate-card="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
-		$('[data-animate-card="On"]').eq(i).find('.card').addClass('animated bounceIn delay-1s');
+		}) // add class toggle
+		controller.addScene(card_bundle_scroll);
+	});
 
-	}) // add class toggle
-	controller.addScene(card_bundle_scroll);
- });
-
-
+})(jQuery);
 function mobileBrowserDetection() {
 "use strict";
 
