@@ -1201,6 +1201,7 @@ overflow: hidden;
 /**Basic Page Node***/
 #basic_page_cavalla{
 background-color: #e8e8e8;
+overflow-x: hidden;
 }
 
 
