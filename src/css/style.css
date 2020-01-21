@@ -997,6 +997,10 @@ position: relative;
   height: 200px;
 }
 
+.photo_album_feed_bundle .card{
+  margin-bottom:3rem;
+}
+
 .photo_album_feed_bundle .card-grid {
   display: grid;
   grid-template-columns: auto auto auto;
