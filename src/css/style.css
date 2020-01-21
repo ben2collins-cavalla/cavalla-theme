@@ -38,7 +38,7 @@ font-family: 'Raleway', sans-serif !important;
 
 .modal-backdrop{
   z-index:3 !important;
-} 
+}
 
 
 .hideme
@@ -97,7 +97,7 @@ background: transparent !important;
   .card_bundle .card-deck {
     -webkit-column-count: initial !important;
     -moz-column-count: 3;
-    column-count: initial !important; 
+    column-count: initial !important;
   }
 }
 
@@ -135,7 +135,7 @@ margin: auto;
 
 .card_bundle .card .btn-primary {
 background-color: #0c0c0c !important;
-border-color: transparent !important;	
+border-color: transparent !important;
 }
 
 .card_bundle .card-title{
@@ -291,7 +291,7 @@ margin: 30px 0px;
 
 .card_bundle .card-text {
   text-align: center;
-  background: #fff;  
+  background: #fff;
   z-index: -24;
   color: #000000;
 }
@@ -313,7 +313,7 @@ margin: 30px 0px;
   }
   }
 
-  
+
 
 [data-animate-card="On"] h1,
 [data-animate-card="On"] .lead,
@@ -991,6 +991,11 @@ position: relative;
 
 }
 
+/****Photo Album Feed***/
+.photo_album_feed img{
+  max-width:100%;
+  height: 200px;
+}
 
 
 /******Staff List Bundle***/
@@ -1053,7 +1058,7 @@ overflow: hidden;
 @media only screen and  (max-width: 767px){
 
 .staff_list_bundle .team-content {
-    bottom: 45px;   
+    bottom: 45px;
 }
 }
 
@@ -1130,8 +1135,8 @@ overflow: hidden;
     display: block;
     -webkit-box-flex: none;
     -ms-flex: none;
-    flex: none; 
-    margin: 0px 0px 15px 0;  
+    flex: none;
+    margin: 0px 0px 15px 0;
     width: 100%;
   }
 }
@@ -1342,9 +1347,9 @@ margin-top:-15px;
 }
 
 .page-footer .legal ul{
-  
+
   display: inline-flex;
-} 
+}
 
 .page-footer .legal li{
   margin-right: 10px;

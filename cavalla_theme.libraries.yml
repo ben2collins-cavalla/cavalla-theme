@@ -3,23 +3,15 @@ global-styling:
   css:
     theme:
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: { type: external }
-      build/css/animate.css : {}
-      build/css/bootstrap.css : {}
-      build/css/style.css : {}
-      build/fonts/fonts.css : {}
+      src/css/animate.css : {}
+      src/css/bootstrap.css : {}
+      src/css/style.css : {}
+      src/fonts/fonts.css : {}
   js:
-    build/js/jQuery.js: {}
-    build/js/scrollmagic.js: {}
-    build/js/bootstrap.js: {}
-    build/js/script.js: {}
-photoGallery:
-   version: VERSION
-   css:
-    theme:
-     build/css/fancybox.css: {}
-   js:
-     build/js/fancybox.js: {}
-     build/js/fancy_photo.js: {}
+    src/js/jQuery.js: {}
+    src/js/scrollmagic.js: {}
+    src/js/bootstrap.js: {}
+    src/js/script.js: {}
 star-rating:
   version: VERSION
   css:
