@@ -95,11 +95,6 @@ function cavalla_theme_preprocess_node(&$variables) {
   $breadcrump_block_object = \Drupal\block\Entity\Block::load('cavalla_theme_breadcrumbs');
   /* creates a renderable array from the block object */
   $variables['breadcrumb'] = \Drupal::entityManager()->getViewBuilder('block')->view($breadcrump_block_object); 
-
-  $variables['node']=$variables['elements']['#node']; 
-  $node = $variables['node'];
-
-  $variables['hero_image_hide'] = $node->get('field_cavalla_bp_hero_image_hide')->value;
 }
 
 
