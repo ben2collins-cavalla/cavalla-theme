@@ -716,7 +716,7 @@ Call To Action Paragrah
 @media only screen and (min-width:768px)
 and (max-width:1365px) {
   .call_to_action_bundle {
-    max-height: 768px;
+    max-height: 468px;
   }
 }
 
@@ -1003,11 +1003,16 @@ position: relative;
   grid-column-gap: 25px;
 }
 
-@media only screen and (min-width:1025px){
+@media only screen and (max-width:767px){
   .photo_album_feed_bundle .card-grid {
     display: block;
   }
 }
+
+.photo_album_feed_bundle .card-grid .card-title{
+  font-size: 1.25rem;
+}
+
 
 /******Staff List Bundle***/
 
