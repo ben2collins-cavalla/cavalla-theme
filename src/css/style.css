@@ -973,21 +973,21 @@ position: relative;
 
 
 @media only screen and (max-width:990px){
-.photo_card{margin-bottom:30px}
+  .photo_card{margin-bottom:30px}
 }
 
 @media only screen and (min-width:1025px){
 
-.photoshelter-feed .container{
-   max-width:960px !important;
-}
+  .photoshelter-feed .container{
+    max-width:960px !important;
+  }
 
-.photo_card_column{
-  max-width: 31% ;
-  margin: 8px 1% ;
-  float:left;
-  padding: 0 ;
-}
+  .photo_card_column{
+    max-width: 31% ;
+    margin: 8px 1% ;
+    float:left;
+    padding: 0 ;
+  }
 
 }
 
@@ -997,6 +997,17 @@ position: relative;
   height: 200px;
 }
 
+.photo_album_feed_bundle .card-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 25px;
+}
+
+@media only screen and (min-width:1025px){
+  .photo_album_feed_bundle .card-grid {
+    display: block;
+  }
+}
 
 /******Staff List Bundle***/
 
