@@ -1,5 +1,3 @@
-
-
 /**** Home Page Animation ****/
 jQuery.noConflict();
 (function($){

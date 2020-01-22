@@ -557,7 +557,7 @@ margin-top: -1px;
 Contact Form Bundle
 *****/
 
-.contact_form_bundle label{
+/* .contact_form_bundle label{
 display: none;
 }
 
@@ -660,6 +660,9 @@ width: auto;
   border-radius: 2rem !important;
 }
 
+ */
+
+
 
 /*.featurettes{
   height:100vh
@@ -671,6 +674,71 @@ width: auto;
     padding:4rem 0rem;
   }
 }*/
+
+
+
+/****Contact Webform*****/
+
+.webform_bundle {
+  display: table;
+  width: 100%;
+  height: 100vh
+}
+
+.webform_bundle .left input,
+.webform_bundle .left textarea{
+  border: 1px solid #6d6d6d
+}
+.webform_bundle .left,
+.webform_bundle .right {
+  width: 50%;
+  position: relative;
+  display: table-cell
+}
+.webform_bundle .right {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+.webform_bundle .webform {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 500px
+}
+.webform_bundle input {
+  width: 100%
+}
+.webform_bundle iframe {
+  width: 100%;
+  height: 100vh
+}
+
+.contactInfo {
+  width: 100%;
+  max-width: 350px;
+  padding: .9rem;
+  margin: auto;
+  background: #393939;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%
+}
+.contactInfo .btn {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff
+}
+
+@media only screen and (max-width:599px) {
+  .contactInfo {
+      max-width: 300px
+  }
+}
 
 .featurettes img{
 width:100%;
