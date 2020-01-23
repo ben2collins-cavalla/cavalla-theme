@@ -129,10 +129,6 @@ max-width: 768px;
 margin: auto;
 }
 
-
-
-
-
 .card_bundle .card .btn-primary {
 background-color: #0c0c0c !important;
 border-color: transparent !important;
@@ -254,16 +250,11 @@ margin: 30px 0px;
 
 @media only screen and (max-width: 767px){
 
-.card_bundle .modal.show .modal-dialog {
-    width: 90%;
-    margin: auto;
+  .card_bundle .modal.show .modal-dialog {
+      width: 90%;
+      margin: auto;
+  }
 }
-}
-
-
-
-
-
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
@@ -557,127 +548,6 @@ margin-top: -1px;
 Contact Form Bundle
 *****/
 
-/* .contact_form_bundle label{
-display: none;
-}
-
-.contact_form_bundle textarea,
-.contact_form_bundle input{
-width:100%;
-border:none;
-border-radius: 0 !important;
-outline: 0;
-}
-
-.contact_form_bundle  .form-text {
-  display: block;
-  margin-top: .25rem;
-  width: 100%;
-  border: none;
-  margin-top: 0;
-}
-
-.contact_form_bundle .contact_form_general_infomation{
-padding: 50px 0px;
-}
-
-.contact_form_bundle .contact_form_general_infomation svg{
- width: 100%;
-}
-
-@media only screen and (min-width: 1024px){
-
-.contact_form_bundle .contact_form_general_infomation svg{
-  width: 35%;
-}
-}
-.contact_form_bundle .contact_form_webform{
-  background: #fff;
- padding: 50px 0px;
-}
-
-
-
-@media only screen and (max-width: 767px){
-
- .contact_form_bundle .contact_form_webform {
-    background: #fff;
-    padding: 50px 10px;
-}
-
-}
-
-
-
-.contact_form_bundle .contact_form_webform form{
-  margin: auto;
-}
-
-
-.contact_form_bundle .contact_form_webform .form-item{
-  display: block;
-  width: 100%;
-  height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.contact_form_bundle .contact_form_webform .form-item-message{
-height:207px;
-}
-
-.contact_form_bundle .contact_form_webform .form-item-message textarea{
-width: 100%;
-}
-
-
-
-.contact_form_bundle .contact_form_webform .form-item-fname,
-.contact_form_bundle .contact_form_webform .form-item-lname{
-width: 49%;
-float: left;
-}
-
-.contact_form_bundle .contact_form_webform .form-item-lname{
-margin-left: 2%;
-}
-
-.contact_form_bundle #edit-actions-submit {
-width: auto;
-  margin-bottom: 20px;
-  background: black !important;
-  color: #fff;
-  padding: 1rem;
-  border-radius: 2rem !important;
-}
-
- */
-
-
-
-/*.featurettes{
-  height:100vh
-}*/
-
-/****Featurette Bundles****/
-/*@media only screen and (max-height: 1366px) and (max-width: 1023px){
-  .featurettes{
-    padding:4rem 0rem;
-  }
-}*/
-
-
-
-/****Contact Webform*****/
 
 .webform_bundle {
   display: table;
@@ -1459,3 +1329,37 @@ margin-top:-15px;
   background: #1c2225;
 }
 
+/*****Menu *******/
+#cavalla_navbar{
+  width: 100%;
+  right: 0;
+  max-width: 34.375rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  overflow: scroll;
+  transition: height .3s;
+
+}
+
+#cavalla_navbar a{
+  font-size: 90px !important;
+  font-weight: bolder !important;
+  font-family: 'Banshee' !important;
+  text-shadow: 0 3px 1px #676565;
+  color: #fff;
+  padding-left: 25px;
+  display: block;
+}
+
+#cavalla_navbar li{
+ width:100%;
+ border-bottom: 1px solid #2b2a2a;
+}
+
+#cavalla_navbar .nav{
+  max-height: 75%;
+  overflow: auto;
+  margin-top: 60px;
+}
