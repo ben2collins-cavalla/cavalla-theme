@@ -1,3 +1,8 @@
+:root {
+  --white: #fff;
+  --black: black
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -82,6 +87,37 @@ height:100vh !important;
 #header{position: fixed;width: 100%;z-index: 8;}
 
 
+/****Accordion****/
+
+.accordion{
+  text-align: center;
+}
+
+.accordion .card a {
+  font-weight: bold;
+  color: var(--black);
+}
+
+.accordion .card-header {
+  border: transparent
+}
+
+.accordion .card {
+  border: transparent;
+  margin-bottom: 10px
+}
+
+.accordion .card-header a:after {
+  content: "";
+  background-image: url("/themes/mgrc/css/../images/angle-arrow-down.svg");
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-size: c;
+  background-repeat: no-repeat;
+  right: 0
+}
 
 
 
@@ -1346,7 +1382,6 @@ margin-top:-15px;
 #cavalla_navbar a{
   font-size: 90px !important;
   font-weight: bolder !important;
-  font-family: 'Banshee' !important;
   text-shadow: 0 3px 1px #676565;
   color: #fff;
   padding-left: 25px;
