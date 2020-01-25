@@ -1369,8 +1369,8 @@ margin-top:-15px;
 #cavalla_navbar{
   width: 100%;
   right: 0;
-  max-width: 34.375rem;
-  height: 100vh;
+  max-width: 20.375rem;
+  height: 100%;
   position: fixed;
   top: 0;
   z-index: 9;
