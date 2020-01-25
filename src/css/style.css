@@ -90,7 +90,7 @@ height:100vh !important;
 /****Accordion****/
 
 .accordion{
-  text-align: center;
+  text-align: left;
 }
 
 .accordion .card a {
@@ -1375,8 +1375,6 @@ margin-top:-15px;
   top: 0;
   z-index: 9;
   overflow: scroll;
-  transition: height .3s;
-
 }
 
 #cavalla_navbar a{
