@@ -593,6 +593,17 @@ Contact Form Bundle
   margin-bottom: 25px;
 }
 
+.webform_bundle .webform_section{
+  vertical-align: middle;
+  align-items: center;
+}
+
+.webform_bundle .webform_section,
+.webform_bundle .contactInfo_section {
+  vertical-align: middle;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
 
   .webform_bundle .webform_section,
@@ -608,25 +619,6 @@ Contact Form Bundle
   border: 1px solid #6d6d6d
 }
 
-.webform_bundle .webform {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  max-width: 500px
-}
-
-@media screen and (max-width: 767px) {
-  .webform_bundle .webform {
-    transform:none;
-    position: relative;
-    /* width:100%; */
-    left:initial;
-    top:initial;
-    margin: auto;
-  }
-}
 
 .webform_bundle input {
   width: 100%
@@ -659,6 +651,7 @@ Contact Form Bundle
 .webform_bundle  .contactInfo {
      transform:none;
      position: unset;
+     max-width: 100%;
   }
 }
 
