@@ -1422,3 +1422,20 @@ margin-top:-15px;
   overflow: auto;
   margin-top: 60px;
 }
+/****Review***/
+
+.star_rating_1 .star_rating:nth-child(-n+1) {
+  color: #f7b958 !important
+}
+.star_rating_2 .star_rating:nth-child(-n+2) {
+  color: #f7b958 !important
+}
+.star_rating_3 .star_rating:nth-child(-n+3) {
+  color: #f7b958 !important
+}
+.star_rating_4 .star_rating:nth-child(-n+4) {
+  color: #f7b958 !important
+}
+.star_rating_5 .star_rating:nth-child(-n+5) {
+  color: #f7b958 !important
+}
