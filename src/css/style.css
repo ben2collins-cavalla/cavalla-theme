@@ -1017,6 +1017,44 @@ position: relative;
   font-size: 1.25rem;
 }
 
+/*****Reviews*****/
+
+/* Individual bars */
+.reviews_feed_bundle .bar-5 {height: 18px; background-color: #4CAF50;}
+.reviews_feed_bundle .bar-4 {height: 18px; background-color: #2196F3;}
+.reviews_feed_bundle .bar-3 {height: 18px; background-color: #00bcd4;}
+.reviews_feed_bundle .bar-2 {height: 18px; background-color: #ff9800;}
+.reviews_feed_bundle .bar-1 {height: 18px; background-color: #f44336;}
+
+.reviews_feed_bundle .bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+
+.reviews_feed_bundle .fa {
+  font-size: 25px;
+}
+
+.reviews_feed_bundle .star_rating_1 .star_rating:nth-child(-n+1) {
+  color: #f7b958 !important
+}
+.reviews_feed_bundle .star_rating_2 .star_rating:nth-child(-n+2) {
+  color: #f7b958 !important
+}
+.reviews_feed_bundle .star_rating_3 .star_rating:nth-child(-n+3) {
+  color: #f7b958 !important
+}
+.reviews_feed_bundle .star_rating_4 .star_rating:nth-child(-n+4) {
+  color: #f7b958 !important
+}
+.reviews_feed_bundle .star_rating_5 .star_rating:nth-child(-n+5) {
+  color: #f7b958 !important
+}
+
+
 
 /******Staff List Bundle***/
 
@@ -1424,18 +1462,3 @@ margin-top:-15px;
 }
 /****Review***/
 
-.star_rating_1 .star_rating:nth-child(-n+1) {
-  color: #f7b958 !important
-}
-.star_rating_2 .star_rating:nth-child(-n+2) {
-  color: #f7b958 !important
-}
-.star_rating_3 .star_rating:nth-child(-n+3) {
-  color: #f7b958 !important
-}
-.star_rating_4 .star_rating:nth-child(-n+4) {
-  color: #f7b958 !important
-}
-.star_rating_5 .star_rating:nth-child(-n+5) {
-  color: #f7b958 !important
-}
