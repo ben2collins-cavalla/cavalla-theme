@@ -1038,6 +1038,11 @@ position: relative;
   font-size: 25px;
 }
 
+.reviews_feed_bundle .pager{
+  width: fit-content;
+  margin: auto;
+}
+
 .reviews_feed_bundle .star_rating_1 .star_rating:nth-child(-n+1) {
   color: #f7b958 !important
 }
