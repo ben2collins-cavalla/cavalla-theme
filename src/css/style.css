@@ -1037,6 +1037,18 @@ position: relative;
 .reviews_feed_bundle .fa {
   font-size: 25px;
 }
+@media only screen and (max-width:767px){
+  .reviews_feed_bundle  .graph .col-md-1{
+    width:20%;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .reviews_feed_bundle  .graph .col-md-10{
+    width:60%;
+    padding: 0;
+  }
+}
 
 .reviews_feed_bundle .pager{
   width: fit-content;
