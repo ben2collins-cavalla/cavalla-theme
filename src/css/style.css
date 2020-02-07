@@ -995,6 +995,7 @@ position: relative;
 .photo_album_feed_bundle img{
   max-width:100%;
   height: 200px;
+  object-fit: cover;
 }
 
 .photo_album_feed_bundle .card{
