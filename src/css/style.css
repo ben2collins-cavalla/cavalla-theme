@@ -58,6 +58,7 @@ font-family: 'Raleway', sans-serif !important;
 
 .cavalla_task_tabs .is-active{
   background:#007bff;
+  color:#fff;
 }
 
 .cavalla_task_tabs .nav-item a{
