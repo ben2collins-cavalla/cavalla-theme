@@ -50,8 +50,21 @@ font-family: 'Raleway', sans-serif !important;
 {
   opacity:0;
 }
+/**Cavalla Task Tabs****/
+
+.cavalla_task_tabs .nav-item a{
+  display: block;
+  padding: .5rem 1rem;
+}
+
+.cavalla_task_tabs .nav-item a {
+    color: #495057;
+}
 
 
+.cavalla_task_tabs .nav-item {
+  border: 1px solid #adb5bd;
+}
 
 .center_text{
   transform: translate(-50%,-50%);
