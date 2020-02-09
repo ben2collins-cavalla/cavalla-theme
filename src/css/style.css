@@ -1376,9 +1376,13 @@ position: relative;
   background: #1d2124 !important;
 }
 
-.user-login-form .form-item,
-.user-pass .form-item{
+.user-login-form .form-item{
   margin-bottom: 1.5rem;
+}
+
+.user-pass p{
+  font-size: 80%;
+  font-weight: 400;
 }
 
 .vertically_align_section{
