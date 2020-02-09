@@ -4,20 +4,19 @@ jQuery.noConflict();
 	"use strict";
 	var controller = new ScrollMagic.Controller();
 
-		$('.call_to_action_bundle').each(function(i){
-			var cta_bundle_scroll=new ScrollMagic.Scene({
-				triggerElement:this,
-				offset: 100, // offset trigger position by 100px;
-				triggerHook: "onCenter",
-			})
-			cta_bundle_scroll.on('start end', function(){
-				$('[data-animate-cta="On"]').eq(i).find('.title-header').addClass('animated fadeIn');
-				$('[data-animate-cta="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
-				$('[data-animate-cta="On"]').eq(i).find('.btn').addClass('animated fadeInDown');
-
-			}) // add class toggle
-			controller.addScene(cta_bundle_scroll);
-		});
+	$('.call_to_action_bundle').each(function(i){
+		var cta_bundle_scroll=new ScrollMagic.Scene({
+			triggerElement:this,
+			offset: 100, // offset trigger position by 100px;
+			triggerHook: "onCenter",
+		})
+		cta_bundle_scroll.on('start end', function(){
+			$('[data-animate-cta="On"]').eq(i).find('.title-header').addClass('animated fadeIn');
+			$('[data-animate-cta="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
+			$('[data-animate-cta="On"]').eq(i).find('.btn').addClass('animated fadeInDown');
+		}) // add class toggle
+		controller.addScene(cta_bundle_scroll);
+	});
 
 	/****Testionial Bundle Scroll Animation */
 	$('.testimonials_bundle').each(function(i){
@@ -52,6 +51,7 @@ jQuery.noConflict();
 	});
 
 })(jQuery);
+
 function mobileBrowserDetection() {
 "use strict";
 
@@ -59,26 +59,20 @@ function mobileBrowserDetection() {
 		return jQuery.browser.mobile;
 }
 
-
-
-
-
-
 jQuery.noConflict();
 (function($){
-"use strict";
-if(mobileBrowserDetection()){
-$('html').addClass('mobile_browser');
-}
-
+	"use strict";
+	if(mobileBrowserDetection()){
+		$('html').addClass('mobile_browser');
+	}
 })(jQuery);
 
 
 jQuery.noConflict();
 (function($){
-"use strict";
-$(".full_background video").prependTo(".full_background");
-$(".full_background article").remove();
+	"use strict";
+	$(".full_background video").prependTo(".full_background");
+	$(".full_background article").remove();
 })(jQuery);
 
 
@@ -96,6 +90,7 @@ if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
 }
 
 else{
+
 	if ($("video")){
 		$("video[autoplay]").each(function(){ this.play(); });
 		$('video').attr('playsinline', '');

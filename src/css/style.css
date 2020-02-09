@@ -1313,69 +1313,71 @@ position: relative;
     background-size: cover;
     background-position: center;
   }
-  @media only screen and  (max-width: 1200px){
+@media only screen and  (max-width: 1200px){
 
-    .testimonial_bundle .pic {
+  .testimonial_bundle .pic {
       width: 200px;
       height: 200px;
       border-radius: 50%;
       margin: 0 auto;
       background-size: cover;
       background-position: center;
-    }
-
   }
+}
 
 
-  .testimonial_bundle .quote{
-    border:none;
-    padding:0px 14px;
-    text-align: justify;
-    max-width: 80%;
-  }
+.testimonial_bundle .quote{
+  border:none;
+  padding:0px 14px;
+  text-align: justify;
+  max-width: 80%;
+}
 
 
 
-  .testimonial_bundle .testimonial {
-    color: black;
-  }
+.testimonial_bundle .testimonial {
+  color: black;
+}
 
-  @media only screen and (max-width:767px) {
+@media only screen and (max-width:767px) {
   .testimonial_bundle .testimonial  {
     margin: auto;
     padding: inherit;
   }
-  }
+}
 
 
 
-  .testimonial_bundle .avatar {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
+.testimonial_bundle .avatar {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 
 
-  [data-animate-testimonial="On"] h1,
-  [data-animate-testimonial="On"] .text-center .lead,
-  [data-animate-testimonial="On"] .testimonial_bundle{
+[data-animate-testimonial="On"] h1,
+[data-animate-testimonial="On"] .text-center .lead,
+[data-animate-testimonial="On"] .testimonial_bundle{
     opacity: 0;
-  }
-
+}
 
 .user-login-form #edit-name--description,
-.user-login-form #edit-pass--description{
+.user-login-form #edit-pass--description,
+.user-pass #edit-name--description,
+.user-pass #edit-pass--description{
   font-size: 80%;
   font-weight: 400;
   color: #6c757d!important;
 
 }
 
-.user-login-form #edit-submit{
+.user-login-form #edit-submit,
+.user-pass #edit-submit {
   color: #fff !important;
   background: #1d2124 !important;
 }
 
-.user-login-form  .form-item{
+.user-login-form .form-item,
+.user-pass .form-item{
   margin-bottom: 1.5rem;
 }
 
