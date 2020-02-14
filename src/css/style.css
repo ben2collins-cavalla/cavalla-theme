@@ -1,8 +1,9 @@
 :root {
-  --white: #fff;
   --black: #000;
   --secondary-black: #1d2124:
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -132,6 +133,7 @@ html {
 
 body{
   font-family: 'Raleway', sans-serif !important;
+  background: var(--light);
 }
 
 .modal-backdrop{
