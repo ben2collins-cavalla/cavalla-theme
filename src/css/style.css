@@ -206,7 +206,7 @@ and (max-width:1365px) {
 
 
 .call_to_action_bundle .marketing_background_text{
-    color: #fff;
+  color: #fff;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -218,18 +218,14 @@ and (max-width:1365px) {
 
 
 .call_to_action_bundle .marketing_background_text a{
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .call_to_action_bundle .marketing_background_text h1{
-     text-transform: capitalize;
-     text-shadow: 0 3px 1px #676565;
-     text-align: center;
-
+  text-transform: capitalize;
+  text-shadow: 0 3px 1px #676565;
+  text-align: center;
 }
-
-
-
 
 .call_to_action_bundle .marketing_background_image img{
   margin-bottom: 0;
@@ -241,7 +237,7 @@ margin-bottom: 10px;
 
 .call_to_action_bundle video {
   object-fit: cover;
-  width: 100vw !important;
+  width: 100% !important;
   height: 100%;
   position: absolute;
   top: 0;
@@ -265,7 +261,7 @@ margin-bottom: 10px;
 
 .card_bundle button:active,
 .card_bundle button:hover {
-background: transparent !important;
+  background: transparent !important;
 }
 
 @media only screen and (max-width:767px) {
