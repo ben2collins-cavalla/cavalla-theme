@@ -527,7 +527,7 @@ body{
   z-index: 14;
 }
 
-.logged-in #header{
+.user-logged-in #header{
   position: fixed;
   width: 100%;
   z-index: 14;
@@ -535,7 +535,7 @@ body{
 }
 
 @media only screen and (min-width: 975px) {
-  .logged-in #header {
+  .user-logged-in #header {
     top: 4.8rem;
   }
 }
