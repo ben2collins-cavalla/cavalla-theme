@@ -9,6 +9,16 @@ html {
   scroll-behavior: smooth;
 }
 
+#toolbar-administration {
+  overflow: hidden;
+  background: black;
+  width: 100%;
+  top: 0;
+  z-index: 18;
+}
+
+
+
 [id*="_page_cavalla"] .hero_image {
   position: relative;
   max-height: 400px;
@@ -451,11 +461,11 @@ body{
 
 /**Cavalla Task Tabs****/
 
-.cavalla_task_tabs{
-  margin-bottom: -7px;
-  padding-bottom: 2rem;
+@media only screen and (min-width:975px) {
+  .cavalla_task_tabs {
+    margin-top: 5rem;
+  }
 }
-
 .cavalla_task_tabs .is-active {
   background: #1d2124;
   color: #fff !important;
@@ -515,6 +525,19 @@ body{
   position: fixed;
   width: 100%;
   z-index: 14;
+}
+
+.logged-in #header{
+  position: fixed;
+  width: 100%;
+  z-index: 14;
+  top: 2.45rem;
+}
+
+@media only screen and (min-width: 975px) {
+  .logged-in #header {
+    top: 4.8rem;
+  }
 }
 
 .hideme
