@@ -139,6 +139,12 @@ html {
   color: #fff;
 }
 
+#blog_page_cavalla .blog_post_feed img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
 /*** Standard Page Styling****/
 
 body{
