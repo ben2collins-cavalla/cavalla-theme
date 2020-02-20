@@ -461,11 +461,7 @@ body{
 
 /**Cavalla Task Tabs****/
 
-@media only screen and (min-width:975px) {
-  .cavalla_task_tabs {
-    margin-top: 5rem;
-  }
-}
+
 .cavalla_task_tabs .is-active {
   background: #1d2124;
   color: #fff !important;
@@ -527,18 +523,7 @@ body{
   z-index: 14;
 }
 
-.user-logged-in #header{
-  position: fixed;
-  width: 100%;
-  z-index: 14;
-  top: 2.45rem;
-}
 
-@media only screen and (min-width: 975px) {
-  .user-logged-in #header {
-    top: 4.8rem;
-  }
-}
 
 .hideme
 {
@@ -1297,6 +1282,17 @@ position: relative;
   margin-top: 2rem;
 }
 
+@media only screen and (min-width:975px) {
+  .user-logged-in .dialog-off-canvas-main-canvas{
+    margin-top: 2.5rem;
+  }
+}
+
+.user-logged-in #header{
+  position: relative;
+}
+
+
 
 [data-animate-testimonial="On"] h1,
 [data-animate-testimonial="On"] .text-center .lead,
@@ -1323,6 +1319,8 @@ position: relative;
 .user-login-form .form-item{
   margin-bottom: 1.5rem;
 }
+
+
 
 .user-pass p{
   font-size: 80%;
