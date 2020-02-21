@@ -145,6 +145,18 @@ html {
   object-fit: cover;
 }
 
+#blog_page_cavalla .blog_post_author img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#blog_page_cavalla .blog_post_author .author{
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
 /*** Standard Page Styling****/
 
 body{
