@@ -145,10 +145,11 @@ html {
   object-fit: cover;
 }
 
-#blog_page_cavalla .blog_author img{
+#blog_page_cavalla .blog_author_photo{
   width: 100px;
   height: 100px;
   object-fit: cover;
+  border-radius: 50%!important;
 }
 
 #blog_page_cavalla .blog_author{
