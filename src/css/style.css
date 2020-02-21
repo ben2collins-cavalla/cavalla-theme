@@ -145,13 +145,13 @@ html {
   object-fit: cover;
 }
 
-#blog_page_cavalla .blog_post_author img{
+#blog_page_cavalla .blog_author img{
   width: 100px;
   height: 100px;
   object-fit: cover;
 }
 
-#blog_page_cavalla .blog_post_author .author{
+#blog_page_cavalla .blog_author{
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: underline;
