@@ -145,17 +145,65 @@ html {
   object-fit: cover;
 }
 
-#blog_page_cavalla .blog_author_photo{
+#blog_page_cavalla .blog_author img{
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: 50%!important;
 }
 
-#blog_page_cavalla .blog_author{
+#blog_page_cavalla .blog_author_name{
   font-weight: bold;
   text-transform: capitalize;
-  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+#blog_page_cavalla [id*="_post_bundle"] .card{
+  height:175px;
+}
+
+#blog_page_cavalla [id*="_post_bundle"] .card-text{
+  margin: 0;
+}
+
+#blog_page_cavalla [id*="_post_bundle"] .card-title{
+  margin-bottom: 0;
+}
+
+#blog_page_cavalla [id*="_post_bundle"] img{
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (min-width:767px) {
+  #blog_page_cavalla [id*="_post_bundle"] img{
+    height: 175px;
+    object-fit: cover;
+  }
+}
+
+#blog_page_cavalla [id*="_post_bundle"] .title{
+   font-size:1.75rem;
+}
+
+#blog_page_cavalla .blog_post_feed [id*="_post_bundle"] .card{
+  height: auto;
+  padding: 1rem;
+}
+
+#blog_page_cavalla .blog_post_feed [id*="_post_bundle"] .card-body{
+  padding: 0;
+}
+
+#blog_page_cavalla .blog_post_feed [id*="_post_bundle"] .title{
+  padding-left: 1rem ;
+}
+
+#blog_page_cavalla .blog_post_feed [id*="_post_bundle"] img{
+  height: 100px;
+  width: 100px;
+}
+
+#blog_page_cavalla .blog_post_feed [id*="_post_bundle"] .col{
+  flex-basis: initial;
 }
 
 /*** Standard Page Styling****/
@@ -390,8 +438,8 @@ body{
 
 @media only screen and (max-width: 767px){
   .card_bundle .modal.show .modal-dialog {
-      width: 90%;
-      margin: auto;
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -429,12 +477,12 @@ body{
 
 @media only screen and (max-width: 767px){
   .card_bundle .card-deck .card {
-      display: block;
-      -webkit-box-flex: none;
-      -ms-flex: none;
-      flex: none;
-      margin: 0px 0px 15px 0;
-      width: 100%;
+    display: block;
+    -webkit-box-flex: none;
+    -ms-flex: none;
+    flex: none;
+    margin: 0px 0px 15px 0;
+    width: 100%;
   }
 }
 
