@@ -206,6 +206,10 @@ html {
   flex-basis: initial;
 }
 
+.blog-feeds .jumbotron_list .blog_feeds_wrapper .card img{
+  display:none;
+}
+
 /*** Standard Page Styling****/
 
 body{
