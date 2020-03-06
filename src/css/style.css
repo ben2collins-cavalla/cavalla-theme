@@ -561,6 +561,7 @@ body{
   height: auto;
   padding: 0;
   text-align: center;
+  z-index: 9;
 }
 
 .featurettes{
