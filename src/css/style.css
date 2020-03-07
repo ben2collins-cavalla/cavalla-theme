@@ -206,11 +206,11 @@ html {
   flex-basis: initial;
 }
 
-.blog-feeds .card-group img{
+.blog_feeds .card_display img{
   height:175px;
 }
 
-.blog-feeds .jumbotron_list .blog_feeds_wrapper .card img{
+.blog_feeds .jumbotron_list .blog_feeds_wrapper .card img{
   display:none;
 }
 
