@@ -14,6 +14,7 @@ use Drupal\block\Entity\Block;
 use Drupal\Core\Breadcrumb\Breadcrumb;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Link;
+use \Drupal\taxonomy\Entity\Term;
 
 
 function getBaseUrl() {
@@ -55,6 +56,35 @@ function cavalla_theme_preprocess_node(&$variables) {
   $breadcrump_block_object = \Drupal\block\Entity\Block::load('cavalla_theme_breadcrumbs');
   /* creates a renderable array from the block object */
   $variables['breadcrumb'] = \Drupal::entityManager()->getViewBuilder('block')->view($breadcrump_block_object);
+}
+
+function cavalla_theme_preprocess_taxonomy_term(&$variables){
+  $breadcrump_block_object = \Drupal\block\Entity\Block::load('cavalla_theme_breadcrumbs');
+  /* creates a renderable array from the block object */
+  $variables['breadcrumb'] = \Drupal::entityManager()->getViewBuilder('block')->view($breadcrump_block_object);
+
+  $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term');
+  $name = Term::load($tid)->get('name')->value;
+  $variables['page_title'] = $name;
+}
+
+function cavalla_theme_preprocess_paragraph__cavalla_taxonomy(&$variables){
+  $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term');
+  $name = Term::load($tid)->get('name')->value;
+
+  $tag= views_embed_view('cavalla_blog_taxonomy_page', 'cavalla_blog_taxonomy_tag_page', $name);
+  $page = views_embed_view('cavalla_blog_taxonomy_page', 'cavalla_blog_taxonomy_category_page', $name);
+
+;
+  if (strpos($_SERVER['REQUEST_URI'], 'offapew.com/category/') !== false) {
+    $variables['cavalla_blog_taxonomy_page'] = views_embed_view('cavalla_blog_taxonomy_page', 'cavalla_blog_taxonomy_category_page', $name);
+  }
+
+  if (strpos($_SERVER['REQUEST_URI'], 'offapew.com/tags/') !== false) {
+    $variables['cavalla_blog_taxonomy_page'] = views_embed_view('cavalla_blog_taxonomy_page', 'cavalla_blog_taxonomy_tag_page', $name);
+  }
+
+  $variables['page_title'] = $name;
 }
 
 function cavalla_theme_preprocess_breadcrumb(&$variables){
