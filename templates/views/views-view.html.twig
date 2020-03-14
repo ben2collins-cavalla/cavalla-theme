@@ -30,10 +30,18 @@
  * @see template_preprocess_views_view()
  */
 #}
-
   {% if header %}
     <header>
       {{ header }}
     </header>
   {% endif %}
+
+  {% if exposed %}
+    {{ exposed }}
+  {% endif %}
+
   {{ rows }}
+
+ {% if pager %}
+    {{ pager }}
+{% endif %}
