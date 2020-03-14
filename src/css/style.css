@@ -208,6 +208,8 @@ html {
 
 .blog_feeds .card_display img{
   height:175px;
+  object-fit: cover;
+
 }
 
 .blog_feeds .jumbotron_list .blog_feeds_wrapper .card img{
@@ -1292,46 +1294,63 @@ position: relative;
     }
   }
 
+#taxonomy_page_cavalla .js-form-type-select{
+  width: fit-content;
+  display: inline-block;
+}
+
+#taxonomy_page_cavalla .js-form-submit{
+  width: fit-content;
+  display: inline-block;
+}
+
+#taxonomy_page_cavalla .taxonomy_feed img{
+  object-fit: cover;
+}
+
+#taxonomy_page_cavalla .pagination{
+  width: fit-content;
+}
+
   /**Testimonials*****/
 
-  .testimonial_bundle{
-    border:none;
-    padding: 2rem 0rem;
+.testimonial_bundle{
+  border:none;
+  padding: 2rem 0rem;
 
-  }
+}
 
 @media screen and (max-width: 768px) {
-
-    .testimonials_bundle  .card-deck .card{
-      display: block;
-      -webkit-box-flex: none;
-      -ms-flex: none;
-      flex: none;
-      margin: 0px 0px 15px 0;
-      width: 100%;
-    }
+  .testimonials_bundle  .card-deck .card{
+    display: block;
+    -webkit-box-flex: none;
+    -ms-flex: none;
+    flex: none;
+    margin: 0px 0px 15px 0;
+    width: 100%;
   }
+}
+
+.testimonial_bundle .pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and  (max-width: 1200px){
 
   .testimonial_bundle .pic {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
   }
-@media only screen and  (max-width: 1200px){
-
-  .testimonial_bundle .pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 0 auto;
-      background-size: cover;
-      background-position: center;
-  }
 }
-
 
 .testimonial_bundle .quote{
   border:none;
