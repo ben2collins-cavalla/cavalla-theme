@@ -12,6 +12,6 @@ global-styling:
     src/js/jQuery.js: {}
     src/js/scrollmagic.js: {}
     src/js/bootstrap.js: {}
+    src/js/classie.js: {}
+    src/js/main.js: {}
     src/js/script.js: {}
-
-
