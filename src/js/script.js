@@ -102,10 +102,13 @@ else{
 });
 
 
+/**** Menu ****/
+jQuery.noConflict();
+(function($){
+	"use strict";
 
+	$('#showMenu').click(function(){
+		$('#showMenu .menu').toggleClass('open');
+	});
 
-
-
-
-
-
+})(jQuery);

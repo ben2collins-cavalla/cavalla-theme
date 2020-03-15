@@ -6,6 +6,7 @@ global-styling:
       https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css: { type: external }
       src/css/animate.css : {}
       src/css/style.css : {}
+      src/css/menu.css : {}
       src/fonts/fonts.css : {}
   js:
     src/js/jQuery.js: {}

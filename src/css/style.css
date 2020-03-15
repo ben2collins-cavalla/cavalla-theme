@@ -1024,6 +1024,7 @@ position: relative;
   color: #f7b958 !important
 }
 
+
 .staff_list_bundle{
   display: block;
   position: relative;
@@ -1292,7 +1293,7 @@ position: relative;
     .step-list__item:nth-child(even) .body {
       order: 1;
     }
-  }
+}
 
 #taxonomy_page_cavalla .js-form-type-select{
   width: fit-content;
