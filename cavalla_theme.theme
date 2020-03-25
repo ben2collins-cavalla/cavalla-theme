@@ -39,6 +39,8 @@ function getBaseUrl() {
 function cavalla_theme_preprocess_page(&$variables){
   cavalla_theme_extend_theme_variables($variables);
   $variables['base_url'] = getBaseUrl();
+  global $base_url, $base_path;
+  $variables['logo'] = getBaseUrl().'sites/default/files/logo.png';
 }
 
 // Make all theme settings available to insert in pages
