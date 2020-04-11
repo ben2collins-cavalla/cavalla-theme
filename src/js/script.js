@@ -26,9 +26,11 @@ jQuery.noConflict();
 			triggerHook: "onCenter",
 		})
 		testimonial_bundle_scroll.on('start end', function(){
-			$('[data-animate-testimonial="On"]').eq(i).find('h1').addClass('animated fadeIn');
+			$('[data-animate-testimonial="On"]').eq(i).find('.header_text').addClass('animated fadeIn');
 			$('[data-animate-testimonial="On"]').eq(i).find('.text-center .lead').addClass('animated fadeInDown');
 			$('[data-animate-testimonial="On"]').eq(i).find('.testimonial_bundle').addClass('animated bounceIn delay-1s');
+			$('[data-animate-testimonial="On"]').eq(i).find('.hyperlinks').addClass('animated fadeIn delay-2s');
+
 
 		}) // add class toggle
 		controller.addScene(testimonial_bundle_scroll);
@@ -42,15 +44,36 @@ jQuery.noConflict();
 			triggerHook: "onCenter",
 		})
 		card_bundle_scroll.on('start end', function(){
-			$('[data-animate-card="On"]').eq(i).find('h1').addClass('animated fadeIn');
+			$('[data-animate-card="On"]').eq(i).find('.header_text').addClass('animated fadeIn');
 			$('[data-animate-card="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
 			$('[data-animate-card="On"]').eq(i).find('.card').addClass('animated bounceIn delay-1s');
+			$('[data-animate-card="On"]').eq(i).find('.hyperlinks').addClass('animated fadeIn delay-2s');
 
 		}) // add class toggle
 		controller.addScene(card_bundle_scroll);
 	});
 
+	/****Featurette Bundle Scroll Animation */
+	$('.featurette_bundle').each(function(i){
+		var featurette_bundle_scroll=new ScrollMagic.Scene({
+			triggerElement:this,
+			offset: 100, // offset trigger position by 100px;
+			triggerHook: "onCenter",
+		})
+		featurette_bundle_scroll.on('start end', function(){
+			$('[data-animate-featurette="On"]').eq(i).find('.featurette-heading').addClass('animated fadeIn');
+			$('[data-animate-featurette="On"]').eq(i).find('.lead').addClass('animated fadeInDown');
+			$('[data-animate-featurette="On"]').eq(i).find('.featurettes_image').addClass('animated bounceIn delay-1s');
+			$('[data-animate-featurette="On"]').eq(i).find('.hyperlinks').addClass('animated fadeIn delay-2s');
+		}) // add class toggle
+		controller.addScene(featurette_bundle_scroll);
+	});
+
 })(jQuery);
+
+
+
+
 
 function mobileBrowserDetection() {
 "use strict";
