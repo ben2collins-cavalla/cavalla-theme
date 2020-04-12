@@ -237,11 +237,7 @@ body{
   }
 }
 
-@media only screen and (min-width:768px) and (max-width:1365px) {
-  .call_to_action_bundle {
-    max-height: 468px;
-  }
-}
+
 
 .call_to_action_bundle .background_image {
   z-index: 5;
