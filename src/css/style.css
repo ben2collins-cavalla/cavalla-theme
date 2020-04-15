@@ -33,7 +33,7 @@ html {
 [id*="_page_cavalla"] .hero_image .title-header {
   position: relative;
   z-index: 4;
-  color: #fff;
+  color: var(--white);
 }
 
 [id*="_page_cavalla"] .hero_image .background_image{
@@ -69,7 +69,7 @@ html {
 
 /***Basic Page Node Breadcrumb****/
 [id*="_page_cavalla"] .breadcrumb_section {
-  background: #fff;
+  background: var(--white);
   position: relative;
   padding: 25px 0px;
 }
@@ -136,7 +136,7 @@ html {
 #block-cavalla-local-tasks ul  li a {
   margin-left: 18px;
   margin-right: 18px;
-  color: #fff;
+  color: var(--white);
 }
 
 #blog_page_cavalla .blog_post_feed img{
@@ -270,7 +270,9 @@ body{
   height: 100%;
 }
 
-
+.call_to_action_bundle .lead {
+  color: var(--white);
+}
 
 .call_to_action_bundle .marketing_background_image img{
   margin-bottom: 0;
@@ -281,7 +283,7 @@ body{
 }
 
 .call_to_action_bundle .title-header{
-  color: #fff;
+  color: var(--white);
 }
 
 .call_to_action_bundle video {
@@ -369,7 +371,7 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: var(--white);
   cursor: pointer;
   outline: none;
   width: 52px;
@@ -401,7 +403,7 @@ body{
 .card_bundle .modal_close span,
 .card_bundle span:before,
 .card_bundle span:after {
-  background: #FFFFFF;
+  background: var(--white);
   content: '';
   cursor: pointer;
   display: block;
@@ -465,7 +467,7 @@ body{
 
 .card_bundle .card-text {
   text-align: center;
-  background: #fff;
+  background: var(--white);
   z-index: -24;
   color: #000000;
 }
@@ -510,7 +512,7 @@ body{
   font-size: 90px !important;
   font-weight: bolder !important;
   text-shadow: 0 3px 1px #676565;
-  color: #fff;
+  color: var(--white);
   padding-left: 25px;
   display: block;
 }
@@ -532,7 +534,7 @@ body{
 
 .cavalla_task_tabs .is-active {
   background: #1d2124;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 
@@ -616,7 +618,7 @@ body{
 
 /***Infographic list Bundle****/
 .info_graphic{
-  background:#fff;
+  background:var(--white);
   padding: 50px 0px;
 }
 
@@ -710,7 +712,7 @@ body{
 }
 
 .page-footer{
-  color: #fff;
+  color: var(--white);
 }
 
 .page-footer h1{
@@ -726,7 +728,7 @@ body{
 }
 
 .page-footer .footer-menus a{
-  color: #fff;
+  color: var(--white);
 }
 
 .page-footer .footer-menus .right_side h2{
@@ -771,7 +773,7 @@ body{
 }
 
 .page-footer .legal a{
-  color:#fff;
+  color:var(--white);
 }
 
 .page-footer  .social-links a {
@@ -853,7 +855,7 @@ border-bottom:1px solid rgba(255,255,255,.5);border-top:1px solid rgba(255,255,2
 .photo_card .title{
   font-size: 21px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   margin: 15px 0;
   opacity: 0;
   transform: translate(-50%,-50%);
@@ -879,8 +881,10 @@ border-bottom:1px solid rgba(255,255,255,.5);border-top:1px solid rgba(255,255,2
 }
 .photo_card .post{
 font-size:14px;
-color:#fff;padding:10px;
-background:#d79719;opacity:0;
+color:var(--white);
+padding:10px;
+background:#d79719;
+opacity:0;
 border-radius:0 19px;
 transform:translate3d(0,-50px,0);
 transition:all .7s ease 0s
@@ -910,9 +914,9 @@ display: block;
   width: 100px;
   height: 40px;
   line-height: 40px;
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   font-size: 14px;
-  color: #fff;
+  color: var(--white);
   transition: all .4s ease 0s;
   margin: 10px auto;
 }
@@ -1097,7 +1101,7 @@ position: relative;
     padding: 20px;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
-    color: #fff;
+    color: var(--white);
   }
 
   @media only screen and  (max-width: 767px){
@@ -1118,7 +1122,7 @@ position: relative;
 
   .staff_list_bundle.team-name,
   .staff_list_bundle .team-role {
-    color: #fff;
+    color: var(--white);
   }
 
   .staff_list_bundle .team-content-social {
@@ -1137,7 +1141,7 @@ position: relative;
   }
 
   .staff_list_bundle .team-content-social li a {
-    color: #fff;
+    color: var(--white);
   }
 
   .staff_list_bundle .team-content-social li a:hover {
@@ -1430,7 +1434,7 @@ position: relative;
 
 .user-login-form #edit-submit,
 .user-pass #edit-submit {
-  color: #fff !important;
+  color: var(--white) !important;
   background: #1d2124 !important;
 }
 
@@ -1510,7 +1514,7 @@ Contact Form Bundle
   padding: .9rem;
   margin: auto;
   background: #393939;
-  color: #fff;
+  color: var(--white);
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -1527,9 +1531,9 @@ Contact Form Bundle
 }
 
 .webform_bundle .contactInfo .btn {
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   border-radius: 30px;
-  color: #fff
+  color: var(--white)
 }
 
 .webform_bundle .webform{
