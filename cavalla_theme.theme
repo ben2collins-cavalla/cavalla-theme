@@ -99,6 +99,8 @@ function cavalla_theme_preprocess_breadcrumb(&$variables){
 
 function cavalla_theme_preprocess_paragraph(&$variables) {
   $variables['base_url_node']= getBaseUrl();
+  $variables['logo'] = getBaseUrl().'sites/default/files/logo.png';
+
 }
 
 function cavalla_theme_preprocess_input__password(&$variables){
