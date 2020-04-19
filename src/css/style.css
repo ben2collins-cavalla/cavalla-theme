@@ -33,7 +33,7 @@ html {
 [id*="_page_cavalla"] .hero_image .title-header {
   position: relative;
   z-index: 4;
-  color: var(--white);
+  color: #fff;
 }
 
 [id*="_page_cavalla"] .hero_image .background_image{
@@ -69,7 +69,7 @@ html {
 
 /***Basic Page Node Breadcrumb****/
 [id*="_page_cavalla"] .breadcrumb_section {
-  background: var(--white);
+  background: #fff;
   position: relative;
   padding: 25px 0px;
 }
@@ -109,10 +109,6 @@ html {
   right: 0
 }
 
-#basic_page_cavalla {
-  background: #f3e6e6;
-}
-
 #block-cavalla-local-tasks {
   position: fixed;
   top:50%;
@@ -136,7 +132,7 @@ html {
 #block-cavalla-local-tasks ul  li a {
   margin-left: 18px;
   margin-right: 18px;
-  color: var(--white);
+  color: #fff;
 }
 
 #blog_page_cavalla .blog_post_feed img{
@@ -232,7 +228,6 @@ body{
 .call_to_action_bundle {
   position: relative;
   height: 100vh;
-
 }
 
 @media only screen and (max-width:767px) {
@@ -241,7 +236,11 @@ body{
   }
 }
 
-
+@media only screen and (min-width:768px) and (max-width:1365px) {
+  .call_to_action_bundle {
+    max-height: 468px;
+  }
+}
 
 .call_to_action_bundle .background_image {
   z-index: 5;
@@ -249,8 +248,6 @@ body{
   object-fit: cover;
   height: 100%;
   width: 100%;
-  height: -moz-available;
-  height: -webkit-fill-available;
 }
 
 @media only screen and (max-width:767px) {
@@ -270,9 +267,7 @@ body{
   height: 100%;
 }
 
-.call_to_action_bundle .lead {
-  color: var(--white);
-}
+
 
 .call_to_action_bundle .marketing_background_image img{
   margin-bottom: 0;
@@ -283,7 +278,7 @@ body{
 }
 
 .call_to_action_bundle .title-header{
-  color: var(--white);
+  color: #fff;
 }
 
 .call_to_action_bundle video {
@@ -363,6 +358,10 @@ body{
   margin-top: 1rem;
 }
 
+.card_bundle .header_text{
+  margin: 30px 0px;
+}
+
 .card_bundle .modal_close {
   background: #363D4E;
   border: none;
@@ -371,7 +370,7 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  color: var(--white);
+  color: #FFFFFF;
   cursor: pointer;
   outline: none;
   width: 52px;
@@ -403,7 +402,7 @@ body{
 .card_bundle .modal_close span,
 .card_bundle span:before,
 .card_bundle span:after {
-  background: var(--white);
+  background: #FFFFFF;
   content: '';
   cursor: pointer;
   display: block;
@@ -467,7 +466,7 @@ body{
 
 .card_bundle .card-text {
   text-align: center;
-  background: var(--white);
+  background: #fff;
   z-index: -24;
   color: #000000;
 }
@@ -512,7 +511,7 @@ body{
   font-size: 90px !important;
   font-weight: bolder !important;
   text-shadow: 0 3px 1px #676565;
-  color: var(--white);
+  color: #fff;
   padding-left: 25px;
   display: block;
 }
@@ -534,7 +533,7 @@ body{
 
 .cavalla_task_tabs .is-active {
   background: #1d2124;
-  color: var(--white) !important;
+  color: #fff !important;
 }
 
 
@@ -597,12 +596,12 @@ body{
     opacity:0;
 }
 
-
-@media only screen and (min-width:767px){
-  .half_view {
-     max-height: 600px !important;
-   }
+@media only screen and (min-width:1366px){
+   .half_view {
+      max-height: 600px !important;
+    }
 }
+
 
 /****Menu *********/
 
@@ -618,7 +617,7 @@ body{
 
 /***Infographic list Bundle****/
 .info_graphic{
-  background:var(--white);
+  background:#fff;
   padding: 50px 0px;
 }
 
@@ -708,11 +707,11 @@ body{
   height: 100%;
   background: black;
   opacity: .5;
-  z-index: 6;
+  z-index: 1;
 }
 
 .page-footer{
-  color: var(--white);
+  color: #fff;
 }
 
 .page-footer h1{
@@ -728,7 +727,7 @@ body{
 }
 
 .page-footer .footer-menus a{
-  color: var(--white);
+  color: #fff;
 }
 
 .page-footer .footer-menus .right_side h2{
@@ -773,7 +772,7 @@ body{
 }
 
 .page-footer .legal a{
-  color:var(--white);
+  color:#fff;
 }
 
 .page-footer  .social-links a {
@@ -855,7 +854,7 @@ border-bottom:1px solid rgba(255,255,255,.5);border-top:1px solid rgba(255,255,2
 .photo_card .title{
   font-size: 21px;
   font-weight: 700;
-  color: var(--white);
+  color: #fff;
   margin: 15px 0;
   opacity: 0;
   transform: translate(-50%,-50%);
@@ -881,10 +880,8 @@ border-bottom:1px solid rgba(255,255,255,.5);border-top:1px solid rgba(255,255,2
 }
 .photo_card .post{
 font-size:14px;
-color:var(--white);
-padding:10px;
-background:#d79719;
-opacity:0;
+color:#fff;padding:10px;
+background:#d79719;opacity:0;
 border-radius:0 19px;
 transform:translate3d(0,-50px,0);
 transition:all .7s ease 0s
@@ -914,9 +911,9 @@ display: block;
   width: 100px;
   height: 40px;
   line-height: 40px;
-  border: 1px solid var(--white);
+  border: 1px solid #fff;
   font-size: 14px;
-  color: var(--white);
+  color: #fff;
   transition: all .4s ease 0s;
   margin: 10px auto;
 }
@@ -1101,7 +1098,7 @@ position: relative;
     padding: 20px;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
-    color: var(--white);
+    color: #fff;
   }
 
   @media only screen and  (max-width: 767px){
@@ -1122,7 +1119,7 @@ position: relative;
 
   .staff_list_bundle.team-name,
   .staff_list_bundle .team-role {
-    color: var(--white);
+    color: #fff;
   }
 
   .staff_list_bundle .team-content-social {
@@ -1141,7 +1138,7 @@ position: relative;
   }
 
   .staff_list_bundle .team-content-social li a {
-    color: var(--white);
+    color: #fff;
   }
 
   .staff_list_bundle .team-content-social li a:hover {
@@ -1434,7 +1431,7 @@ position: relative;
 
 .user-login-form #edit-submit,
 .user-pass #edit-submit {
-  color: var(--white) !important;
+  color: #fff !important;
   background: #1d2124 !important;
 }
 
@@ -1514,7 +1511,7 @@ Contact Form Bundle
   padding: .9rem;
   margin: auto;
   background: #393939;
-  color: var(--white);
+  color: #fff;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -1531,9 +1528,9 @@ Contact Form Bundle
 }
 
 .webform_bundle .contactInfo .btn {
-  border: 1px solid var(--white);
+  border: 1px solid #fff;
   border-radius: 30px;
-  color: var(--white)
+  color: #fff
 }
 
 .webform_bundle .webform{
