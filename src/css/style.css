@@ -494,6 +494,27 @@ body{
   opacity: 0;
 }
 
+.cart-form input[type="submit"],
+.layout-checkout-form input[type="submit"]{
+  width: auto;
+  margin: 1rem 0;
+}
+
+.cart-form .media img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cart-form table {
+  text-align: center;
+}
+
+.cart-form table th{
+  background: #0c0c0c;
+  color:#fff;
+}
+
 
 /*****Menu *******/
 #cavalla_navbar{
@@ -560,6 +581,55 @@ body{
   padding: 0;
   text-align: center;
   z-index: 9;
+}
+
+.commerce_bundle{
+  margin-bottom: 1.5rem;
+}
+
+.commerce_bundle .form-item-purchased-entity-0-attributes-attribute-color{
+  display: none;
+}
+
+.commerce_bundle  #commerce-product-add-to-cart-form .js-form-item{
+  margin-bottom: 1rem;
+}
+
+.commerce_bundle input,
+.commerce_bundle select{
+  padding: .375rem .75rem;
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+.commerce_bundle label{
+ display: inherit;
+}
+.commerce_bundle .product_color {
+  position: relative;
+}
+
+.commerce_bundle .product_color_wrapper {
+  display: inline-block;
+}
+
+.commerce_bundle .product_color_wrapper .color{
+  display: flex;
+  margin-bottom: 1rem;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product_color_wrapper:hover~.color{
+  visibility: visible;
+}
+
+.commerce_bundle .product_color_wrapper img{
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
 }
 
 .featurette_bundle .circular_image img{
