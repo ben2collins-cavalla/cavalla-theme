@@ -21,9 +21,13 @@
 #}
 
  <div class="media">
-   {{ product_variation.field_commerce_var_image }}
+   <img src="{{ image }}" width="80" height="100%" alt="Product- {{ product }}" class="mr-2"/>
   <div class="media-body">
-    <p class="mt-0">{{ product_variation.title }}</p>
-    <p><small>{{ product_variation.attribute_colors }}<small> -  <samll>{{ product_variation.attribute_size }}</samll></h6>
+    <dl>
+      <dt class="mb-1"><b>{{ product }}</b><br><small>${{ price }}</small></dt>
+      <dd>
+        <dd><small><b>Color:</b> {{ color }}</small> <br> <small><b>Size:</b> {{ size }}</small></dd>
+      </dd>
+    </dl>
   </div>
 </div>
