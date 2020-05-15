@@ -514,6 +514,7 @@ body{
 
 .cart-form table {
   text-align: center;
+  width: 100%;
 }
 
 .cart-form table th{
