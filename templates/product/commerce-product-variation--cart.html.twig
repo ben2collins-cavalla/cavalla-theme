@@ -20,20 +20,17 @@
  */
 #}
 
- <div class="media">
-   <img src="{{ image }}" width="80" height="100%" alt="Product- {{ product }}" class="mr-2"/>
+<div class="media">
+  <img src="{{ image }}" width="80" height="100%" alt="Product- {{ product }}" class="mr-2"/>
   <div class="media-body">
-    <dl>
-      <dt class="mb-1"><b>{{ product }}</b><br><small>${{ price }}</small></dt>
-      <dd>
-        {%  if color is not null %}
-          <dd><small><b>Color:</b> {{ color }}</small>
-        {% endif %}
+    <h5 class="mt-0">{{ product }}</h5>
+    <dd>
+      {%  if color is not null %}
+      <small><b>Color:</b> {{ color }}</small>
+      {% endif %}
 
-        {%  if size is not null %}
-          <br><small><b>Size:</b> {{ size }}</small></dd>
-        {% endif %}
-      </dd>
-    </dl>
+      {%  if size is not null %}
+      - <small><b>Size:</b> {{ size }}</small></dd>
+      {% endif %}
   </div>
 </div>
