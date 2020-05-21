@@ -494,6 +494,13 @@ body{
   opacity: 0;
 }
 
+.cart-flyout{
+  position: absolute;
+  right: 0;
+  transform: translate(-50%,-50%);
+  top: 50%;
+}
+
 .cart-form .delete-order-item{
   margin: auto !important;
 }
