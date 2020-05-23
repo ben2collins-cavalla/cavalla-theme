@@ -11,7 +11,7 @@
 (function() {
 
 	var bodyEl = document.body,
-		content = document.querySelector( '.menu-content-wrap' ),
+		content = document.querySelector( '#content' ),
 		openbtn = document.getElementById( 'showMenu' ),
 		closebtn = document.getElementById( 'hideMenu' ),
 		isOpen = false;

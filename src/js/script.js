@@ -137,7 +137,7 @@ jQuery.noConflict();
 })(jQuery);
 
 
-	var elmnt = document.querySelector('.call_to_action_bundle .video');
+/* 	var elmnt = document.querySelector('.call_to_action_bundle .video');
 	var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
@@ -177,7 +177,7 @@ jQuery.noConflict();
 
 	  function nextVideo() {
         player.nextVideo(loop);
-	  }
+	  } */
   /*     function stopVideo() {
         player.stopVideo();
 	  } */
