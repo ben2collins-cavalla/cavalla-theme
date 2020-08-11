@@ -136,6 +136,29 @@ jQuery.noConflict();
 
 })(jQuery);
 
+jQuery.noConflict();
+(function($){
+	"use strict";
+	var timelineSwiper = new Swiper ('.timeline_carousel_bundle .swiper-container', {
+		direction: 'vertical',
+		loop: false,
+		speed: 1600,
+		pagination: '.swiper-pagination',
+		paginationBulletRender: function (swiper, index, className) {
+		var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+		return '<span class="' + className + '">' + year + '</span>';
+		},
+		paginationClickable: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		breakpoints: {
+		768: {
+			direction: 'horizontal',
+		}
+		}
+	});
+})(jQuery);
+
 
 /* 	var elmnt = document.querySelector('.call_to_action_bundle .video');
 	var tag = document.createElement('script');
