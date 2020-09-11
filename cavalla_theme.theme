@@ -102,6 +102,11 @@ function cavalla_theme_preprocess_select(&$variables){
   $variables['attributes']['class'][] = 'form-control';
 }
 
+function cavalla_theme_preprocess_status_messages(&$variables){
+  $variables['attributes']['class'][] = 'alert alert-danger';
+}
+
 function cavalla_theme_update_8001() {
   \Drupal::service('config.installer')->installDefaultConfig('theme', 'cavalla_theme');
 }
+
