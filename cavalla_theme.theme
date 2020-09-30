@@ -40,7 +40,8 @@ function cavalla_theme_preprocess_page(&$variables){
   cavalla_theme_extend_theme_variables($variables);
   $variables['base_url'] = getBaseUrl();
   global $base_url, $base_path;
-  $variables['logo'] = getBaseUrl().'sites/default/files/logo.png';
+  $variables['logo'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+
 }
 
 // Make all theme settings available to insert in pages
@@ -86,7 +87,7 @@ function cavalla_theme_preprocess_breadcrumb(&$variables){
 
 function cavalla_theme_preprocess_paragraph(&$variables) {
   $variables['base_url_node']= getBaseUrl();
-  $variables['logo'] = getBaseUrl().'sites/default/files/logo.png';
+  $variables['logo'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
 
 }
 
