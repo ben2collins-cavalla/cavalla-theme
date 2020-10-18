@@ -208,6 +208,10 @@ html {
 
 }
 
+.blog_feeds .jumbotron_list .col{
+  padding: 0;
+}
+
 .blog_feeds .jumbotron_list .blog_feeds_wrapper .card img{
   display:none;
 }
@@ -851,7 +855,17 @@ body{
   border-left-color: #fff4f4;
 }
 
+.embed-media iframe{
+  width: 100%;
+  height: 100vh;
+  max-height: 600px;
+}
+@media only screen  and (max-width:767px) {
 
+  .embed-media iframe{
+    max-height: 350px;
+  }
+}
 .featurette_bundle .circular_image img{
   border-radius: 50%;
   height: 25vw !important;
