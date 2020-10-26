@@ -205,7 +205,12 @@ html {
 .blog_feeds .card_display img{
   height:175px;
   object-fit: cover;
+  width: 100%;
+}
 
+.blog_feeds .jumbotron_list img {
+  width: 100%;
+  height: 100%;
 }
 
 .blog_feeds .jumbotron_list .col{
@@ -866,6 +871,8 @@ body{
     max-height: 350px;
   }
 }
+
+
 .featurette_bundle .circular_image img{
   border-radius: 50%;
   height: 25vw !important;
@@ -893,12 +900,16 @@ body{
   }
 }
 
+
+
 [data-animate-featurette="On"] .featurette-heading,
 [data-animate-featurette="On"] .lead,
 [data-animate-featurette="On"] .featurettes_image,
 [data-animate-featurette="On"] .hyperlinks{
     opacity:0;
 }
+
+
 
 @media only screen and (min-width:1366px){
    .half_view {
