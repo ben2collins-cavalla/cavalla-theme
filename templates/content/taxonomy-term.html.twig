@@ -105,10 +105,8 @@
   {% if 'Off' in content.field_cavalla_taxonomy_hide_himg[0] %}
   <!--Hero Image-->
   <section class="hero_image">
-  {%  if true in content.field_cavalla_taxonomy_hero_img[0] %}
-    <picture class="">
-      <img  class="background_image" src="{{ content.field_cavalla_taxonomy_hero_img[0] }}" alt="{{ content.field_cavalla_taxonomy_hero_img[0]["alt"]}}"/>
-    </picture>
+  {%  if true in content.field_cavalla_taxonomy_hero[0] %}
+   {{ content.field_cavalla_taxonomy_hero }}
     <div class="marketing_background_text center_text">
       <div class="container">
         <h1 class="title-header">{{ page_title }}</h1>
