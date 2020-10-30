@@ -20,6 +20,11 @@ html {
   max-height: 400px;
 }
 
+[id*="_page_cavalla"] .hero_image img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
 [id*="_page_cavalla"] .hero_image:before {
   position: absolute;
   width: 100%;
@@ -387,20 +392,18 @@ body{
   }
 }
 
-.card_bundle .rows{
-  max-width: 768px;
-  margin: auto;
-}
 
 .card_bundle .card .btn-primary {
   background-color: #0c0c0c !important;
   border-color: transparent !important;
 }
 
-.card_bundle .card-title{
-  font-size: 1.15rem;
-  text-align:center;
+.card_bundle .card img {
+  object-fit: contain;
+  max-height: 200px;
+  width: 100%;
 }
+
 
 
 .card_bundle .card .modal-dialog{
@@ -412,13 +415,26 @@ body{
   border-radius: 0;
 }
 
-.card_bundle .card 	.card-body .btn{
+.card_bundle 	.card-body .btn{
   margin-top: 1rem;
 }
+
+.card_bundle .card-title{
+  font-size: 1.15rem;
+  text-align:center;
+}
+
+.card_bundle .rows{
+  max-width: 768px;
+  margin: auto;
+}
+
 
 .card_bundle .header_text{
   margin: 30px 0px;
 }
+
+
 
 .card_bundle .modal_close {
   background: #363D4E;
