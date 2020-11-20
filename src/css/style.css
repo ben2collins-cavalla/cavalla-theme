@@ -23,6 +23,10 @@ html {
 [id*="_page_cavalla"] .hero_image img {
   max-height: 400px;
   object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  object-position: 50%;
 }
 
 [id*="_page_cavalla"] .hero_image:before {
@@ -39,15 +43,6 @@ html {
   position: relative;
   z-index: 4;
   color: #fff;
-}
-
-[id*="_page_cavalla"] .hero_image .background_image{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  max-height: 400px;
-  object-position: 50%;
 }
 
 [id*="_page_cavalla"] .marketing_background_text {
