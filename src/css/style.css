@@ -1707,24 +1707,24 @@ position: relative;
   }
 }
 
-.testimonial_bundle .pic {
+.testimonial_bundle img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   margin: 0 auto;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media only screen and  (max-width: 1200px){
 
-  .testimonial_bundle .pic {
+  .testimonial_bundle img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 0 auto;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -1751,6 +1751,8 @@ position: relative;
 .testimonial_bundle .avatar {
   margin-bottom: 2rem;
   margin-top: 2rem;
+  width: fit-content;
+  margin: auto;
 }
 
 .testimonial_bundle .cite {
