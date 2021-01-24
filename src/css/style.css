@@ -293,7 +293,8 @@ body{
   object-fit: cover;
 }
 
-.call_to_action_bundle .title-header{
+.call_to_action_bundle .title-header,
+.call_to_action_bundle .lead{
   color: #fff;
 }
 

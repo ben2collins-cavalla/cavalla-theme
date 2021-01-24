@@ -11,7 +11,7 @@ global-styling:
       src/fonts/fonts.css : {}
   js:
     src/js/scrollmagic.js: {}
-    https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js: { type: external }
+    src/js/bootstrap.js: {}
     https://unpkg.com/swiper/swiper-bundle.min.js: { type: external }
     src/js/classie.js: {}
     src/js/main.js: {}
